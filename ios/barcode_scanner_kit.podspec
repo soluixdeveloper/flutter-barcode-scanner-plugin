@@ -17,7 +17,7 @@ flutter plugin for barcode scanner
   s.public_header_files = 'Classes/**/*.h'
   s.dependency 'Flutter'
   # mlkit vision
-  s.dependency 'GoogleMLKit/BarcodeScanning', '~> 2.2.0'
+  s.dependency 'GoogleMLKit/BarcodeScanning', '~> 4.0.0'
   s.platform                = :ios, '10.0'
   s.ios.deployment_target   = '10.0'
   s.static_framework = true
