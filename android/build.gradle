@@ -5,11 +5,11 @@ buildscript {
     repositories {
         mavenLocal()
         google()
-        jcenter()
+        mavenCentral()
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.1.2'
+        classpath 'com.android.tools.build:gradle:8.5.0'
     }
 }
 
@@ -17,14 +17,15 @@ rootProject.allprojects {
     repositories {
         mavenLocal()
         google()
-        jcenter()
+        mavenCentral()
     }
 }
 
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 32
+    namespace 'com.b.biradar.google_ml_kit'
+    compileSdk 34
 
     defaultConfig {
         minSdkVersion 21
@@ -35,8 +36,6 @@ android {
 
 }
 dependencies {
-//    implementation 'com.google.android.gms:play-services-mlkit-barcode-scanning:16.2.1'
-    implementation 'com.google.android.gms:play-services-mlkit-barcode-scanning:18.0.0'
-//    implementation 'com.google.mlkit:barcode-scanning:17.0.0'
-    implementation 'com.google.mlkit:barcode-scanning:17.0.2'
+    implementation 'com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0'
+    implementation 'com.google.mlkit:barcode-scanning:17.2.0'
 }
